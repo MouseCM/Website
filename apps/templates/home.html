@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MouseCM</title>
+  <title>Mouse's Website</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
@@ -15,35 +15,30 @@
       box-sizing: border-box;
       background-color: #000;
     }
+    a:link {
+    color: blue; 
+    background-color: transparent; 
+    text-decoration: none;
+    }
 
-    /* CSS for header */
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #040000;
+    a:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+    }
+
+    a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
     }
 
     .header .logo {
       font-size: 25px;
       font-family: 'Sriracha', cursive;
-      color: #f4ebeb;
+      color: #FFF;
       text-decoration: none;
       margin-left: 30px;
-    }
-
-    .nav-items {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      background-color: #0a0101;
-      margin-right: 20px;
-    }
-
-    .nav-items a {
-      text-decoration: none;
-      color: #f7f1f1;
-      padding: 35px 20px;
     }
 
     /* CSS for main element */
@@ -53,15 +48,14 @@
       justify-content: center;
       align-items: center;
       width: 100%;
-      height: 520px;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
+      height: 600px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://i.ytimg.com/vi/JTckTjJAE6s/maxresdefault.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
 
     .intro h1 {
-      text-align: center;
       font-family: sans-serif;
       font-size: 60px;
       color: #fff;
@@ -71,9 +65,8 @@
     }
 
     .intro p {
-      text-align: center;
-      font-size: 20px;
-      color: #d1d1d1;
+      font-size: 30px;
+      color: #fff;
       text-transform: uppercase;
       margin: 20px 0;
     }
@@ -87,14 +80,45 @@
       font-size: 20px;
       font-weight: bold;
       cursor: pointer;
-      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
     }
+
+    .about-me {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 80px;
+      border-top: 2px solid #000;
+      background-color: #2c2b2b;
+    }
+
+    .about-me img {
+      width: 300px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .about-me-text h2 {
+      font-size: 30px;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 40px;
+    }
+
+    .about-me-text p {
+      font-size: 15px;
+      color: #fff;
+      margin: 40px;
+    }
+
 
     .achievements {
       display: flex;
       justify-content: space-around;
       align-items: center;
       padding: 40px 80px;
+      background-color: #CCC8AA;
     }
 
     .achievements .work {
@@ -108,63 +132,58 @@
     .achievements .work i {
       width: fit-content;
       font-size: 50px;
-      color: #fdfbfb;
+      color: #000;
       border-radius: 50%;
-      border: 2px solid #333333;
+      border: 2px solid #000;
       padding: 12px;
     }
 
     .achievements .work .work-heading {
       font-size: 20px;
-      color: #f5f0f0;
+      color: #000;
       text-transform: uppercase;
       margin: 10px 0;
     }
 
     .achievements .work .work-text {
       font-size: 15px;
-      color: #f1eaea;
+      color: #000;
       margin: 10px 0;
     }
+
+
     /* CSS for footer */
     .footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #1820aa;
-      padding: 40px 80px;
+      background-color: #f1efefd5;
+      padding: 1px 100px;
     }
 
     .footer .copy {
-      color: #fff;
+      color: #000;
     }
 
     .bottom-links {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      padding: 40px 0;
+      padding: 10px 0;
     }
 
     .bottom-links .links {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
-      padding: 0 40px;
-    }
 
-    .bottom-links .links span {
-      font-size: 20px;
-      color: #fff;
-      text-transform: uppercase;
-      margin: 10px 0;
     }
 
     .bottom-links .links a {
       text-decoration: none;
-      color: #a1a1a1;
-      padding: 10px 20px;
+      color: #000;
+      padding: 40px 20px;
     }
   </style>
 </head>
@@ -172,52 +191,51 @@
 <body>
   <header class="header">
     <a class="logo">Mouse</a>
-    <nav class="nav-items">
-      <a href="#">Home</a>
-      <a href="sorry">Contact</a>
-    </nav>
   </header>
   <main>
     <div class="intro">
-      <h1>Hi, I'm Ngyen Chi Minh</h1>
-      <p>You can call me Mouse</p>
-      <p>I am a Software engineer</p>
-      <a href="sorry"><button>About</button></a>
+      <h1>Software Engineer</h1>
+      <p>Nguyễn Chí Minh</p>
+      <button>Contact</button>
     </div>
+      <div class="about-me">
+        <img src="images/Tree.jpg" alt="me">
+        <div class="about-me-text">
+          <h2>About Me</h2>
+          <p>I am Nguyen Chi Minh but you can call me Mouse, I am currently a high school student. I started learning programming since 21/02/2022 and now i'm learning how to make a website.<br>
+          My dream is becoming a software engineer in big tech companies.
+          </p>
+        </div>
+      </div>
     <div class="achievements">
       <div class="work">
-        <a href="sorry">
-        <i class="fas fa-atom"></i>
-        </a>
+        <i class="fas fa-cog"></i>
         <p class="work-heading">Projects</p>
+        <p class="work-text">All my projects is on <a href="https://github.com/MouseCM">Github</a> <br><br><br><br><br><br><br></p>
       </div>
       <div class="work">
-        <a href="sorry">
-        <i class="fas fa-skiing"></i>
-        </a>
+        <i class="fas fa-user-circle"></i>
         <p class="work-heading">Skills</p>
+        <p class="work-text">
+        Have a particular love for computer science <br>
+        Willing to learn continuously<br>
+        Proficient in programming languages ​​such as C++ and Python <br>
+        Have basic knowledge of programming languages like Java or Swift <br>
+        Have a solid foundation in data structures and algorithms <br>
+        Able to use English at a good level <br>
+        Have good self-study ability <br>
+        </p>
       </div>
-      <div class="work">
-        <a href="sorry">
-        <i class="fas fa-ethernet"></i>
-        </a>
-        <p class="work-heading">Network</p>
-        
-      </div>
+      
     </div>
   </main>
   <footer class="footer">
-    <div class="copy">&copy; Mouse</div>
+    <div class="copy">&copy; Mousecuber@gmail.com</div>
     <div class="bottom-links">
       <div class="links">
-        <span>More Info</span>
-        <a href="#">Home</a>
-        <a href="sorry">Contact</a>
-      </div>
-      <div class="links">
-        <span>Social Links</span>
-        <a href="https://www.facebook.com/profile.php?id=100059696831695"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/mouse.cm/"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/MouseCM"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100059696831695"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://www.instagram.com/mouse.cm/"><i class="fab fa-instagram fa-2x"></i></a>
       </div>
     </div>
   </footer>
