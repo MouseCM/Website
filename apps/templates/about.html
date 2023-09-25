@@ -1,0 +1,224 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+    body {
+      margin: 0;
+      box-sizing: border-box;
+      background-color: #000;
+    }
+    a:link {
+      color: blue; 
+      background-color: transparent; 
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: blue;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: white;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #191919;
+    }
+
+    .header .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: #FFF;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #191919;
+      margin-right: 5px;
+    }
+
+    .nav-items a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 20px;
+    }
+
+
+    .about-me {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 5px;
+      border-top: 2px solid #000;
+      background-color: #2c2b2b;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .about-me img {
+      width: 400px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+      border: 5px solid #fff;
+    }
+
+    .about-me-text h2 {
+      font-size: 45px;
+      color: #ebe9e8f0;
+      text-transform: uppercase;
+      margin: 40px;
+    }
+
+    .about-me-text p {
+      font-size: 25px;
+      color: #d4d2d1f0;
+      margin: 40px;
+    }
+
+    .achievements {
+      align-items: center;
+      padding: 30px 0px;
+      background-color: #9c9b9af0;
+    }
+
+    .achievements .work {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0px;
+    }
+
+    .achievements .work .work-heading {
+      font-size: 30px;
+      color: #000;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .achievements .work .work-text {
+      font-size: 25px;
+      color: #000;
+      margin: 20px 0px;
+      text-align: center;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #191919;
+      padding: 5px 10px;
+    }
+
+    .footer .copy {
+      color: #fff;
+    }
+
+    .bottom-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      
+    }
+
+    .bottom-links .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .bottom-links .links a {
+      text-decoration: none;
+      color: #fff;
+      padding:  10px 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a class="logo">Mouse</a>
+    <nav class="nav-items">
+      <a href="http://127.0.0.1:8000/about">About</a>
+      <a href="http://127.0.0.1:8000/contact">Contact</a>
+      <a href="http://127.0.0.1:8000"><i class="fas fa-home fa-2x"></i></a>
+    </nav>
+  </header>
+  <main>
+      <div class="about-me">
+        {% load static %}
+        <img src="{% static 'me.jpg' %}" alt="me">
+        <div class="about-me-text">
+          <h2>About Me</h2>
+          <p>I am Nguyen Chi Minh but you can call me Mouse, I am currently a high school student <br>
+            I started learning programming since 21/02/2022<br>
+            Dream of becoming a software engineer in big tech companies <br>
+            Have a passion for computer science and creating software<br>
+            Willing to learn and gain more experience in software development<br>
+          </p>
+        </div>
+      </div>
+    <div class="achievements">
+      <div class="work">
+        <i class="fas fa-code fa-5x"></i>
+        <p class="work-heading">Programming Skills</p>
+        <p class="work-text">
+          Proficient in programming language such as C++ and Python <br> 
+          Have basic knowledge of programming languages like Java and Javascript <br>
+          Have knowledge about HTML and CSS <br>
+          Have a solid foundation in data structures and algorithms <br>
+          Used to work with frameworks like Django, Tkinter <br>
+          Experience in web development
+        </p>
+      </div>
+      <div class="work">
+        <i class="fas fa-user-circle fa-4x"></i>
+        <p class="work-heading">Soft Skills</p>
+        <p class="work-text">
+        Problem solving ability <br>
+        Able to use English at a good level <br>
+        Creativity, Patience and Self-awareness <br>
+        Have good self-study ability <br>
+        </p>
+      </div>
+      <div class="work">
+        <i class="fas fa-cog fa-5x"></i>
+        <p class="work-heading">Projects</p>
+        <p class="work-text">All my projects is on <a href="https://github.com/MouseCM">Github</a> </p>
+      </div>
+      
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="copy">&copy; Mouse</div>
+    <div class="bottom-links">
+      <div class="links">
+        <a href="mailto:mousecuber@gmail.com"><i class="fab fa-google fa-2x"></i></a>
+        <a href="https://github.com/MouseCM"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100059696831695"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://www.instagram.com/mouse.cm/"><i class="fab fa-instagram fa-2x"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple HTML HomePage</title>
+  <title>Information</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
@@ -14,30 +13,12 @@
       margin: 0;
       box-sizing: border-box;
     }
-    a:link {
-      color: white; 
-      background-color: transparent; 
-      text-decoration: none;
-    }
 
-    a:visited {
-      color: white;
-      background-color: transparent;
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: lightblue;
-      background-color: transparent;
-      text-decoration: underline;
-    }
-
-    /* CSS for header */
     .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #000;
+      background-color: #191919;
     }
 
     .header .logo {
@@ -52,7 +33,7 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      background-color: #000;
+      background-color: #191919;
       margin-right: 20px;
     }
 
@@ -63,13 +44,12 @@
       font-size: 20px;
     }
 
-    /* CSS for main element */
     .intro {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
-      height: 800px;
+      height: 930;
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&w=1000&q=80");
       background-size: cover;
       background-position: center;
@@ -80,7 +60,7 @@
       padding-top: 50px;
       font-family: sans-serif;
       font-size: 30px;
-      color: #fff;
+      color: #c9c7c7;
       font-weight: bold;
       text-transform: uppercase;
       margin: 0;
@@ -89,9 +69,40 @@
 
     .intro p {
       font-size: 22px;
-      color: #d1d1d1;
+      color: #c9c7c7;
       text-align: center;
       margin: 20px 0;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #191919;
+      padding: 5px 10px;
+    }
+
+    .footer .copy {
+      color: #fff;
+    }
+
+    .bottom-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      
+    }
+
+    .bottom-links .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .bottom-links .links a {
+      text-decoration: none;
+      color: #fff;
+      padding:  10px 20px;
     }
 
   </style>
@@ -101,21 +112,36 @@
   <header class="header">
     <a class="logo">Mouse</a>
     <nav class="nav-items">
-      <a href="http://127.0.0.1:8000">Home</a>
+      <a href="http://127.0.0.1:8000/about">About</a>
+      <a href="http://127.0.0.1:8000/contact">Contact</a>
+      <a href="http://127.0.0.1:8000"><i class="fas fa-home fa-2x"></i></a>
     </nav>
   </header>
   <div class="intro">
-    <h1>full name</h1>
+    <h1>Full name</h1>
     <p>Nguyen Chi Minh</p>
     <h1>Email</h1>
     <p>Mousecuber@gmail.com</p>
     <h1>Phone</h1>
     <p>(+84) 363548560</p>
-    <h1>facebook</h1>
-    <p><a href="https://www.facebook.com/profile.php?id=100059696831695">https://www.facebook.com/profile.php?id=100059696831695</a></p>
-    <h1>nationality</h1>
-    <p>Viet Nam</p>
+    <h1>Date of birth</h1>
+    <p>03/11/2006</p>
+    <h1>Location</h1>
+    <p>Hai Phong, Viet Nam</p>
+    <h1>Languages</h1>
+    <p>English and Vietnamese</p>
   </div>
+  <footer class="footer">
+    <div class="copy">&copy; Mouse</div>
+    <div class="bottom-links">
+      <div class="links">
+        <a href="mailto:mousecuber@gmail.com"><i class="fab fa-google fa-2x"></i></a>
+        <a href="https://github.com/MouseCM"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100059696831695"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://www.instagram.com/mouse.cm/"><i class="fab fa-instagram fa-2x"></i></a>
+      </div>
+    </div>
+  </footer>
  
 </body>
 
