@@ -93,7 +93,7 @@
     }
 
     .about-me img {
-      width: 300px;
+      width: 500px;
       max-width: 100%;
       height: auto;
       border-radius: 10px;
@@ -101,32 +101,28 @@
 
     .about-me-text h2 {
       font-size: 30px;
-      color: #fff;
+      color: #d4d2d1f0;
       text-transform: uppercase;
       margin: 40px;
     }
 
     .about-me-text p {
       font-size: 15px;
-      color: #fff;
+      color: #d4d2d1f0;
       margin: 40px;
     }
 
-
     .achievements {
-      
-      justify-content: space-around;
       align-items: center;
-      padding: 10px 10px;
-      background-color: #CCC8AA;
+      padding: 30px 0px;
+      background-color: #9c9b9af0;
     }
 
     .achievements .work {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      padding: 10px 10px;
+      padding: 20px 0px;
     }
 
     .achievements .work i {
@@ -142,13 +138,14 @@
       font-size: 20px;
       color: #000;
       text-transform: uppercase;
-      margin: 0px 0;
+      margin: 10px 0;
     }
 
     .achievements .work .work-text {
       font-size: 15px;
       color: #000;
       margin: 20px 0px;
+      text-align: center;
     }
 
 
@@ -157,8 +154,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #f1efefd5;
-      padding: 5px 20px;
+      background-color: #c6c4c4;
+      padding: 5px 10px;
     }
 
     .footer .copy {
@@ -195,7 +192,7 @@
     <div class="intro">
       <h1>Software Engineer</h1>
       <p>Nguyễn Chí Minh</p>
-      <button>Contact</button>
+      <a href="https://www.facebook.com/profile.php?id=100059696831695"> <button>Contact</button> </a> 
     </div>
       <div class="about-me">
         {% load static %}
@@ -209,30 +206,31 @@
       </div>
     <div class="achievements">
       <div class="work">
-        <i class="fas fa-cog"></i>
-        <p class="work-heading">Projects</p>
-        <p class="work-text">All my projects is on <a href="https://github.com/MouseCM">Github</a> <br><br><br><br><br><br><br></p>
-      </div>
-      <div class="work">
         <i class="fas fa-user-circle"></i>
         <p class="work-heading">Skills</p>
         <p class="work-text">
-        Have a particular love for computer science <br>
-        Willing to learn continuously<br>
-        Proficient in programming languages ​​such as C++ and Python <br>
-        Have basic knowledge of programming languages like Java or Swift <br>
-        Have a solid foundation in data structures and algorithms <br>
-        Able to use English at a good level <br>
-        Have good self-study ability <br>
+        Have a particular love for computer science. <br>
+        Willing to learn continuously. <br>
+        Proficient in programming languages ​​such as C++ and Python. <br>
+        Have basic knowledge of programming languages like Java or Swift. <br>
+        Have a solid foundation in data structures and algorithms. <br>
+        Able to use English at a good level. <br>
+        Have good self-study ability. <br>
         </p>
+      </div>
+      <div class="work">
+        <i class="fas fa-cog"></i>
+        <p class="work-heading">Projects</p>
+        <p class="work-text">All my projects is on <a href="https://github.com/MouseCM">Github</a> </p>
       </div>
       
     </div>
   </main>
   <footer class="footer">
-    <div class="copy">&copy; Mousecuber@gmail.com</div>
+    <div class="copy">&copy; Mouse</div>
     <div class="bottom-links">
       <div class="links">
+        <a href="mailto:mousecuber@gmail.com"><i class="fab fa-google fa-2x"></i></a>
         <a href="https://github.com/MouseCM"><i class="fab fa-github fa-2x"></i></a>
         <a href="https://www.facebook.com/profile.php?id=100059696831695"><i class="fab fa-facebook fa-2x"></i></a>
         <a href="https://www.instagram.com/mouse.cm/"><i class="fab fa-instagram fa-2x"></i></a>
