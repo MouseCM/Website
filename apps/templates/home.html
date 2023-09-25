@@ -198,7 +198,8 @@
       <button>Contact</button>
     </div>
       <div class="about-me">
-        <img src="../static/tree.jpg" alt="me">
+        {% load static %}
+        <img src="{% static 'tree.jpg' %}" alt="me">
         <div class="about-me-text">
           <h2>About Me</h2>
           <p>I am Nguyen Chi Minh but you can call me Mouse, I am currently a high school student. I started learning programming since 21/02/2022 and now i'm learning how to make a website.<br>
